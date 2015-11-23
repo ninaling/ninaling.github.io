@@ -1,0 +1,205 @@
+
+/*extra small deviced*/
+@media not|only screen and (width: 768px) {
+    CSS-Code;
+}
+
+
+
+
+
+@font-face {
+    font-family:Monofur;
+    src: local('monof55.ttf');
+    src: local('c3_project/files/monof55.ttf');
+    src: url('c3_project/files/monof55.ttf');
+    src: format('truetype');
+}
+
+.jumbotron {
+    background-color:#006666;
+    color:white;
+/*    font-family: Courier;*/
+/*    font-family:Monofur;*/
+/*
+    position:absolute;
+    margin-top:20%;
+*/
+}
+
+.header_subtext {
+    margin:0px;
+    padding:0px;
+}
+
+.monof {
+    font-family:Monofur;   
+}
+
+#resume_button{
+    text-decoration: none;
+    color:#006666;
+/*    background-color: #006666;*/
+    background-image: 0;
+    text-align: center;
+    width:120px;
+    height:40px;
+/*    text-align: center;*/
+    border-radius: 5px;
+    border:0;
+    outline:0;
+}
+
+#resume_button_text {
+    text-decoration: none;
+    font-size:120%;  
+    font-weight: bold;
+/*    margin-top:auto;*/
+/*    vertical-align: middle;*/
+/*
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    color:white;
+*/
+}
+
+#resume_button_text a:hover {
+    color:#005252;
+    text-decoration: none;
+}
+
+#personal_info_description {
+/*
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+*/
+    text-align:left:
+}
+
+#profile_picture_container {
+    border-radius: 100%;   
+}
+
+#profile_picture {
+    max-width: 60%;
+    border-radius: 100%;
+}
+
+.sliding_div {
+    
+}
+
+.row {
+    text-align: center;
+}
+
+/*
+.col-md-4 img {
+    width:220px;   
+}
+*/
+
+
+
+.large_section_button {
+/*    background-color:#006666;*/
+    color:#006666;
+    text-align: left;
+    width:60%
+/*    font-family:Monofur;*/
+}
+
+#section_header {
+    padding-top:0px;
+    padding-bottom: 0px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+#section_main_list{
+    text-indent: none;
+    margin-left: 20px; 
+    text-align:right;
+    
+}
+
+#section_main_list li{
+/*
+    background-position:100%;
+    padding-right: .6em;
+*/
+}
+
+.section_list {
+    list-style: none;   
+}
+
+.align_right {
+    text-align:right;   
+}
+
+/*
+.large_section_button h2{
+    font-family: Monofur;   
+}
+
+.large_section_button p{
+    font-family: Monofur;   
+}
+
+*/
+
+
+
+
+#carousel_container {
+    text-align: center;
+    
+    
+}
+    
+.left {
+    background-color: white;   
+}
+
+.right {
+    background-color: white;   
+}
+
+.arrow_button{
+    text-decoration: none;
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);   
+}
+
+/*
+.carousel_image_container {
+    text-align: center;
+}
+*/
+    
+.carousel_image {
+/*    max-height: 100%; 
+    */
+    max-height:100%;
+    margin:auto;
+}
+
+.carousel-control {
+    background-color:white;   
+}
+
+/*
+
+
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+*/
+
+
+

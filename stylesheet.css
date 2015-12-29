@@ -48,19 +48,27 @@ td{
     padding:0;
 }
 
-#circuit{
-    width:20vw;
+#circuit, #circuit_words{
+    width:25vw;
     position: absolute;
     top:-25px;
-    right: -12px;
+    right: 0;
+}
+
+#life_goals, #favorites{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    position: absolute;
 }
 
 #life_goals{
-    position: absolute;
     right: 25vw; 
     top:12vh;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2vw;
+}
+
+#favorites{
+    left: 40vw;
+    top:35vh;
 }
 
 #left_prompt{
@@ -69,6 +77,20 @@ td{
     top:40vh;
     height: 30%;
     opacity: 0.6;
+}
+
+#art{
+    height: 35vw;
+    position: absolute;
+    top:8vh;
+    left: 3vw;
+}
+
+#royce{
+    position: absolute;
+    height: 45%;
+    bottom: -10%;
+    left: -2vw;
 }
 
 #title{
@@ -80,23 +102,23 @@ td{
 
 #name{
 /*    font-size: 100px;*/
-    font-size: 9vw;
+    font-size: 9vmax;
     font-family: 'Cabin Sketch', cursive;
     font-weight: bold;
 /*    margin: 0px;*/
     padding: 0px;
     margin: none;
     position: absolute;
-    bottom: 3vh;
+    top: 1vmax;
 }
 
 #sub_name{
-    font-size: 2vw;
+    font-size: 2vmax;
     font-family: 'Open Sans', sans-serif;
     padding: 0px;
     margin: none;
     position: absolute;
-    bottom: -2vh;
+    top: 12vmax;
 }
 
 #next_bit_container {
@@ -228,13 +250,13 @@ td{
 
 .project_left{
     text-align: right;
-    margin-left: 13vw;
+    margin-left: 10vw;
     margin-right: 1vw;
     width: 30vw;
 }
 
 .project_right{
-    width:40vw;   
+    width:43vw;   
 }
 
 .collaboration{
@@ -270,17 +292,38 @@ td{
 
 @media screen and (max-width: 767px) {
     
-    #circuit{
-        width:25vw;
+    #circuit, #circuit_words{
+        width:auto;
+        height: 75vmax;
         top:-18px;
+        right: -15px;
     }
         
+    #art{
+        top:auto;
+        height: 28vmax;
+        bottom:50vh;
+        left: -15px;
+    }
+    
     #life_goals{
-        font-size: 1.7vw;
+        font-size: 2vw;
+        right: 32vw; 
+    }
+    
+    #favorites{
+        font-size: 2vw;
+        top:30vh;
+    }
+
+    #name{
+        position: static;
+        font-size: 7vmax;
     }
     
     #sub_name{
-        font-size: 2.2vw;   
+        position: static;
+        font-size: 1.8vmax;
     }
     
     #profile{
@@ -336,11 +379,11 @@ td{
     }
 }
 
+
 /*
 @media (min-width: 400px) and (max-width: 767px) {
 
 }
+*/
 
-@media screen and (max-width: 399px) {
 
-}*/

@@ -1,6 +1,8 @@
 $(document).ready(function(){
     
     $('#left_prompt').hide();
+    $('#silicon').hide();
+    
     setTimeout(function(){
         $('#left_prompt').fadeIn(300);
         $('#left_prompt').animate({ 
@@ -8,29 +10,6 @@ $(document).ready(function(){
         }, 600);
         $('#left_prompt').fadeOut(300);
     }, 300);
-    
-    $(window).on( "swipe", function() {
-        $('#circuit').animate({
-            'margin-right':'12px'
-        }, 100)
-        setTimeout(function() {
-            $('#circuit').animate({
-                'margin-right':'0px'
-            }, 100)
-          }, 5000)
-    } );
-    
-    $('#circuit').mouseenter(function(){
-        $(this).animate({
-            'margin-right':'12px'
-        }, 100)
-    });
-    
-    $('#circuit').mouseleave(function(){
-        $(this).animate({
-            'margin-right':'0px'
-        }, 100)
-    });
     
         // Activate Carousel
     $("#myCarousel").carousel({interval: 5000});
@@ -64,6 +43,13 @@ $(document).ready(function(){
     });
     
     $("#yearbook").click(function(){
+        $('html, body').animate({
+        scrollTop: $("#myCarousel").offset().top
+    }, 800); 
+        $("#myCarousel").carousel(4);
+    });
+    
+    $("#yearbook2").click(function(){
         $('html, body').animate({
         scrollTop: $("#myCarousel").offset().top
     }, 800); 

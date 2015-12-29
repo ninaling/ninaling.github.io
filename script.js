@@ -1,10 +1,26 @@
 $(document).ready(function(){
-//    var $personal_info_description_height=$('#$personal_info_description').height();
-//    
-//    ('#profile_picture_container').height($personal_info_description_height);
     
-    // Activate Carousel
-    $("#myCarousel").carousel({interval: 2000});
+    var height=$(window).height();
+    var width=$(window).width();
+
+    $(window).on('scroll', function() {
+        $(this).scrollLeft(0); //sets left scroll to 0px
+    });
+    
+    $('#circuit').mouseenter(function(){
+        $(this).animate({
+            right:'+=8px'
+        }, 100)
+    });
+    
+    $('#circuit').mouseleave(function(){
+        $(this).animate({
+            right:'-=8px'
+        }, 100)
+    });
+    
+        // Activate Carousel
+    $("#myCarousel").carousel({interval: 5000});
     
     // Enable Carousel Indicators
     $(".item1").click(function(){
@@ -26,7 +42,6 @@ $(document).ready(function(){
         $("#myCarousel").carousel(5);
     });
 
-
     // Enable Carousel Controls
     $(".left").click(function(){
         $("#myCarousel").carousel("prev");
@@ -34,5 +49,15 @@ $(document).ready(function(){
     $(".right").click(function(){
         $("#myCarousel").carousel("next");
     });
+    
+    $("#yearbook").click(function(){
+        $('html, body').animate({
+        scrollTop: $("#myCarousel").offset().top
+    }, 800); 
+        $("#myCarousel").carousel(5);
+    });
 });
+
+
+
 

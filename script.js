@@ -1,11 +1,14 @@
 $(document).ready(function(){
     
     $('#left_prompt').hide();
-    $('#left_prompt').fadeIn(300);
-    $('#left_prompt').animate({
-        'right':'15vw'
-    }, 600);
-    $('#left_prompt').fadeOut(300);
+    setTimeout(function(){
+        $('#left_prompt').fadeIn(300);
+        $('#left_prompt').animate({ 
+            'right':'15vw'
+        }, 600);
+        $('#left_prompt').fadeOut(300);
+    }, 300);
+    
 
     $(window).on('scroll', function() {
         $(this).scrollLeft(0); //sets left scroll to 0px

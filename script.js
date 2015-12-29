@@ -3,9 +3,9 @@ $(document).ready(function(){
     var height=$(window).height();
     var width=$(window).width();
 
-    $(window).on('scroll', function() {
-        $(this).scrollLeft(0); //sets left scroll to 0px
-    });
+//    $(window).on('scroll', function() {
+//        $(this).scrollLeft(0); //sets left scroll to 0px
+//    });
     
     $('#circuit').mouseenter(function(){
         $(this).animate({

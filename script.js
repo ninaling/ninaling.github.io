@@ -9,11 +9,6 @@ $(document).ready(function(){
         $('#left_prompt').fadeOut(300);
     }, 300);
     
-
-    $(window).on('scroll', function() {
-        $(this).scrollLeft(0); //sets left scroll to 0px
-    });
-    
     $(window).on( "swipe", function() {
         $('#circuit').animate({
             'margin-right':'12px'

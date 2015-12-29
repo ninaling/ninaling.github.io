@@ -71,11 +71,11 @@ td{
     top:35vh;
 }
 
-#left_prompt{
+#down_prompt{
     position: absolute;
-    right: 5vw;
-    top:40vh;
-    height: 30%;
+    left: 40vw;
+    top:20vh;
+    width: 20vw;
     opacity: 0.6;
 }
 

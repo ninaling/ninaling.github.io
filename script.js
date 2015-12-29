@@ -1,14 +1,13 @@
 $(document).ready(function(){
     
-    $('#left_prompt').hide();
-    $('#silicon').hide();
+    $('#down_prompt').hide();
     
     setTimeout(function(){
-        $('#left_prompt').fadeIn(300);
-        $('#left_prompt').animate({ 
-            'right':'15vw'
+        $('#down_prompt').fadeIn(300);
+        $('#down_prompt').animate({ 
+            'top':'65vh'
         }, 600);
-        $('#left_prompt').fadeOut(300);
+        $('#down_prompt').fadeOut(300);
     }, 300);
     
         // Activate Carousel

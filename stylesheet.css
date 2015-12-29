@@ -253,7 +253,7 @@ td{
     font-style:'Open Sans',sans-serif;
     font-size:20px;
     font-weight: 300;
-    margin-bottom:45px;   
+    margin-bottom:45px; 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

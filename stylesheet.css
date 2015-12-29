@@ -52,7 +52,7 @@ td{
     width:20vw;
     position: absolute;
     top:-25px;
-    right: -8px;
+    right: -12px;
 }
 
 #life_goals{
@@ -61,6 +61,14 @@ td{
     top:12vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2vw;
+}
+
+#left_prompt{
+    position: absolute;
+    right: 5vw;
+    top:40vh;
+    height: 30%;
+    opacity: 0.6;
 }
 
 #title{

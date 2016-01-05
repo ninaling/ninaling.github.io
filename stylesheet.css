@@ -46,29 +46,8 @@ td{
     
     margin:0;
     padding:0;
-}
-
-#circuit, #circuit_words{
-    width:25vw;
-    position: absolute;
-    top:-25px;
-    right: 0;
-}
-
-#life_goals, #favorites{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2vw;
-    position: absolute;
-}
-
-#life_goals{
-    right: 25vw; 
-    top:12vh;
-}
-
-#favorites{
-    left: 40vw;
-    top:35vh;
+/*    text-align: center;*/
+/*    position: relative;*/
 }
 
 #down_prompt{
@@ -79,46 +58,46 @@ td{
     opacity: 0.6;
 }
 
-#art{
-    height: 35vw;
-    position: absolute;
-    top:8vh;
-    left: 3vw;
-}
-
-#royce{
-    position: absolute;
-    height: 45%;
-    bottom: -10%;
-    left: -2vw;
-}
-
 #title{
     width:98vw;
     height:30vh;
-    position: absolute;
-    top: 35vh;
+    margin-top: 16vh;
 }
 
 #name{
-/*    font-size: 100px;*/
-    font-size: 9vmax;
-    font-family: 'Cabin Sketch', cursive;
-    font-weight: bold;
-/*    margin: 0px;*/
+    font-size: 7vw;
+    font-family: 'Cabin Sketch', sans-serif;
     padding: 0px;
-    margin: none;
-    position: absolute;
-    top: 1vmax;
+    left: -5vw;
+    text-align: center;
+    z-index: 5;
+}
+
+#img_row{
+    margin-top:2vh;
+    text-align:center;
+}
+
+#img_container{
+    width: 25vw;
+    top:-8vh;
+    text-align: center;
+}
+
+#center_img{
+/*    width: 60%;*/
+    width:100%;
+    z-index: 0;
 }
 
 #sub_name{
-    font-size: 2vmax;
+    font-size: 1.4vw;
     font-family: 'Open Sans', sans-serif;
     padding: 0px;
-    margin: none;
-    position: absolute;
-    top: 12vmax;
+    left: 6vw;
+/*    margin-top: 42vh;*/
+    text-align: center;
+    z-index: 4;
 }
 
 #next_bit_container {
@@ -168,7 +147,7 @@ td{
 
 #skills{
     padding: 15px;
-    margin-top: 300px;
+    margin-top: 350px;
 }
 
 .skill_level{
@@ -292,6 +271,23 @@ td{
 
 @media screen and (max-width: 767px) {
     
+    #title{
+        margin-top: 18vh;   
+    }
+    
+    #img_row{
+        margin-top: -2vh;   
+    }
+    
+    #img_container{
+        top:0vh;   
+        width:30vw;
+    }
+    
+    #center_img{
+        width:100%;
+    }
+
     #circuit, #circuit_words{
         width:auto;
         height: 75vmax;
@@ -317,13 +313,11 @@ td{
     }
 
     #name{
-        position: static;
-        font-size: 7vmax;
+        font-size: 8vw;
     }
     
     #sub_name{
-        position: static;
-        font-size: 1.8vmax;
+        font-size: 2.2vw;
     }
     
     #profile{

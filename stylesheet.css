@@ -232,11 +232,12 @@ td{
     text-align: right;
     margin-left: 10vw;
     margin-right: 1vw;
-    width: 30vw;
+    width: 25vw;
 }
 
 .project_right{
-    width:43vw;   
+    text-align: left;
+    width:50vw;   
 }
 
 .collaboration{

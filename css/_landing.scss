@@ -1,0 +1,37 @@
+$primary: 'Open Sans', sans-serif;
+$secondary: 'Lato', sans-serif;
+
+$break-small: 850px;
+
+#landing {
+    height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    #title {
+        font-family: $primary, sans-serif;
+        font-size: 4vw;
+        font-weight: 100;
+        @media screen and (max-width: $break-small) {
+            font-size: 5vh;
+        }
+    }
+    
+    #title_img_container{
+        #title_img{
+            height: 45vh;   
+        }
+    }
+    
+    #title_subtext{
+        font-family: $secondary, sans-serif;
+        font-size: 2vw;
+        font-weight: 300;
+        @media screen and (max-width: $break-small) {
+            font-size: 3vh;
+        }
+    }
+}

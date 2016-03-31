@@ -1,314 +1,84 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <!--google fonts-->
-		<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,300' rel='stylesheet' type='text/css'>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!--Google Fonts-->
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
         
-        <!--css-->
-        <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
-		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+    <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         
-        <!--javascript-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="script.js" type="text/javascript"></script>
+    <!--AngularJS-->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-		<title>Xin (Nina) Ling</title>
-        <link rel="icon" type="image/ico" href="icon.png"/>
-	</head>
-	<body>
-		<div id="container">
-                
-            <div id="title" class="row">
-                <div id="name" class="col-lg-offset-3 col-lg-7 col-md-offset-3 col-md-7 col-sm-offset-3 col-sm-7 col-xs-offset-2 col-xs-9">
-                    Xin (Nina) Ling
-                </div>
+    <!--Bootsrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-                <div id="sub_name" class="col-lg-offset-4 col-lg-6 col-md-offset-4 col-md-6 col-sm-offset-4 col-sm-6 col-xs-offset-2 col-xs-8">ucla - computer science and engineering - developer</div>
-            </div>
-            
-            <div id="img_row" class="row">
-                <div id="img_container" class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-4 col-xs-4"><img id="center_img" src="images/apple.png"/></div>
-            </div>
+    <!--CSS-->
+        <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
 
-            <img id="down_prompt" src="images/down.png"/>
-<!--            <img id="royce" src="images/royce.png"/>-->
-		</div> <!--close container-->
+    <!--Javascript-->
+        <script src="script.js" type="text/javascript"></script>
+        <script src="profile-path.js" type="text/javascript"></script>
+        <script src="jquery.js" type="text/javascript"></script>
+
+        <title>nina ling</title>
+
+    </head>
+    <body ng-app="myModule" ng-controller="myController">
+
+        <div id="under_construction">
+            <div id="under_construction_message">
+                This site is currently under construction! For the previous version, please click <a id="previous_version_link" src="#">here</a>. <span id="remove_under_construction" class="glyphicon glyphicon-remove"></span>
+            </div>
+        </div>
         
-		<div id="next_bit_container">
-			<div id="profile" class="row" style="margin-top:20vh">
-				<div id="profile_pic_container" class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-					<!--                    <img id="profile_pic" src="images/profile_picture.jpg"/>-->
-					<canvas id="profile_pic_canvas" width="380" height="340"></canvas>
-					<script>
-						var img = new Image;
-						img.onload = function(){
-						    var canvas = document.getElementById("profile_pic_canvas");
-						    var context = canvas.getContext("2d");
-						    context.beginPath();
-						    context.moveTo(0, 100);
-						    context.lineTo(100, 340);
-						    context.lineTo(380, 290);
-						    context.lineTo(330, 0);
-						    context.closePath();
-						
-						    context.save();
-						    context.clip();
-						    context.drawImage(img, 0, 0, 380, 340);
-						
-						    context.strokeStyle='#F9F5F4';
-						    context.stroke();
-						    context.restore();
-						};
-						img.src = "files/profile_cropped.jpg";
-					</script>
-				</div>
-				<div id="profile_content" class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-					<p class="profile_content_p">Hey, nice hair. </p>
-					<p class="profile_content_p">I'm Nina, a Chinese Canadian currently studying studying in the city of angels. In the past, I have lived in Wuxi (Jiangsu Province), Toronto, and finally Dongguan (Canton), where I attended an American international school for 10 years. </p>
-					<p class="profile_content_p">I am interested in web and software development, graphic design and digital art. I believe in the merging of design and illustration in order to add a personal touch to any website or app. </p>
-                    <p class="profile_content_p">In addition to my studies and hobbies, I often travel with my family. The profile picture here was taken at the Grand Canyon this past summer. I have also visited Scotland, France, Malaysia, and Cambodia, among other countries.</p>
-					<p class="profile_content_p">
-						In addition, I like Malcolm Gladwell's books and prefer cracking open hard boiled eggs from the fat ends.
-					</p>
-				</div>
-			</div>
-			<div id="resume" style="margin-top:25vh;margin-bottom:110px">
-				<div id="edu_skills" class="row">
-					<div id="education" class="col-lg-7 col-md-7 col-sm-7 col-xs-12" style="padding:45px; right:-2vw">
-						<h1 style="text-align:right">EDUCATION</h1>
-						<p style="font-size:20px;text-align:right;font-weight:600">University of California - Los Angeles</p>
-						<p style="text-indent:2em;font-size:12px;text-align:right">pursuing bachelor's degree in Computer Science and Engineering</p>
-						<p style="text-indent:2em;font-size:12px;text-align:right"><em>2015 - 2019 (predicted)</em></p>
-						<p style="font-size:14px;text-indent:2em">
-							relevant coursework:
-						<ul style="font-size:14px">
-							<li>
-								CS
-								<ul>
-									<li>
-										<span class="course">31: Intro to CS I</span> 
-										<p class="course_description">- basic data types, classes, functions, arrays, strings, pointers.</p>
-									</li>
-									<li>
-										<span class="course">32*: Intro to CS II</span> 
-										<p class="course_description">- OOP, polymorphism, data structures, algorithm analysis.</p>
-									</li>
-									<li>
-										<span class="course">35L*: Software Construction Laboratory</span>
-										<p class="course_description"> - common software tools and environments, emacs, mySQL, SSH, etc.</p>
-									</li>
-									<li><span class="course">1: Freshman CS Seminar</span></li>
-								</ul>
-							</li>
-							<li>
-								Math
-								<ul>
-									<li><span class="course">31B: Integration and Infinite Series</span></li>
-									<li><span class="course">32A*: Calculus of Several Variables</span></li>
-								</ul>
-							</li>
-							<li><span class="course">Physics 1B*: Oscillations, Waves, Electric and Magnetic Fields</span></li>
-							<br>
-							<li style="list-style:none">* = currrently enrolled</li>
-						</ul>
-						</p>
-                    <p style="font-size:14px;text-indent:2em">
-                        relevant high school APs: Statistics (5), Physics C: Mechanics (5), Physics C: E &amp; M (5)
-                    </p>
-					</div> <!--close education-->
-					<div id="skills" class="col-lg-offset-1 col-lg-3 col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3 col-xs-offset-2 col-xs-8">
-						<h1 id="skills_title">SKILLS</h1>
-							<table style="font-size:15px;padding:0">
-								<tr>
-									<td class="skill">C, C++</td>
-									<td><img src="images/three_blue.png" class="skill_level"/></td>
-								</tr>
-								<tr>
-									<td class="skill">Java</td>
-									<td><img src="images/three_peach.png" class="skill_level"/></td>
-								</tr>
-								<tr>
-									<td class="skill">HTML/CSS</td>
-									<td><img src="images/three_red.png" class="skill_level"/></td>
-								</tr>
-								<tr>
-									<td class="skill">jQuery</td>
-									<td><img src="images/two_green.png" class="skill_level"/></td>
-								</tr>
-								<tr>
-									<td class="skill">Python</td>
-									<td><img src="images/two_red.png" class="skill_level"/></td>
-								</tr>
-								<br>
-								<tr>
-									<td class="skill">Adobe Photoshop</td>
-									<td><img src="images/three_peach.png" class="skill_level"/></td>
-								</tr>
-							</table>
-							<p class="skill" style="font-size:15px;padding:2px;margin-top:15px">fluent in English and Mandarin</p>
-					</div>
-				</div>
-            
-				<div id="experience">
-                    <div class="row">
-                        <div class="col-lg-offset-2 col-lg-7 col-md-offset-2 col-md-7 col-sm-offset-2 col-sm-7 col-xs-offset-1 col-xs-12">
-                            <h1 style="margin-left:20px">EXPERIENCE</h1>
-                        </div>
+        <div id="landing">
+            <div id="title">xin (NINA) ling</div>    
+            <div id="title_img_container">
+                <img id="title_img" src="images/apple.png"/>
+            </div>
+            <div id="title_subtext">developer / designer</div>
+        </div>
+        
+        <div id="about">
+            <div id="profile_pic_container">
+                <canvas id="profile_pic_canvas" width="380" height="340"></canvas>
+            </div>
+            <div id="about_content">
+                <h2 id="about_content_title">ABOUT</h2>
+                <p class="about_content_p">Hey, nice hair. </p>
+                <p class="about_content_p">I'm Nina, a Chinese Canadian currently studying studying in Los Angeles. In the past, I have lived in Wuxi (Jiangsu Province), Toronto, and finally Dongguan (Canton), where I attended an American international school for 10 years. </p>
+                <p class="about_content_p">I am interested in web and software development, graphic design and digital art. I believe in the merging of design and illustration in order to add a personal touch to any website or app. </p>
+                <p class="about_content_p">In addition to my studies and hobbies, I often travel with my family. The profile picture here was taken at the Grand Canyon this past summer. Some countries I've visited include Scotland, France, Malaysia, and Cambodia.</p>
+                <p class="about_content_p">
+                    I also like Malcolm Gladwell's books and prefer cracking open hard boiled eggs from the fat ends.
+                </p>
+            </div>
+        </div>
+        
+        <div id="education">
+            <div id="education_header">
+                <h2 id="education_title">EDUCATION</h2>
+                <h3 id="education_college">University of California - Los Angeles</h3>
+                <p class="education_college_des">pursuing bachelors' degree in Computer Science &amp; Engineering</p>
+                <p class="education_college_des">3.921 GPA</p>
+                <p id="education_college_date">2015-2019 (predicted)</p>
+            </div>
+            <div id="education_courses">
+                <h3 id="courses_title">RELEVANT COURSES</h3>
+                <div class="course" ng-repeat="course in getCourses()">
+                    <div class="course_title">
+                        <div class="course_title_main">{{course.title}}</div>
+                        <div class="course_title_subtitle">{{course.subtitle}}</div>
                     </div>
-                    
-                    <div class="row" style="margin-bottom:20px">
-                        <div class="col-lg-offset-2 col-lg-3 col-md-offset-2 col-md-3 col-sm-offset-2 col-sm-3 col-xs-offset-1 col-xs-4">
-                            <p class="experience">IEEE</p>
-                            <p class="exp_fullname">Institute of Electronics and Electrical Engineers</p>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                            <p class="exp_roles">OPS (Open Project Space) member</p>
-                            <p class="exp_time">oct 2015-present</p>
-                            
-                            <p class="exp_roles">C3 (Code, Create, Compete) member</p>
-                            <p class="exp_time">oct 2015-present</p>
-                            
-                            <p class="exp_description">Breadboarding, circuitry, soldering, and a bit of coding.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row" style="margin-bottom:20px">
-                        <div class="col-lg-offset-2 col-lg-3 col-md-offset-2 col-md-3 col-sm-offset-2 col-sm-3 col-xs-offset-1 col-xs-4">
-                            <p class="experience">ACM</p>
-                            <p class="exp_fullname">Association of Computing Machinery</p>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                            <p class="exp_roles">Hack member</p>
-                            <p class="exp_time">oct 2015-present</p>
-                            
-                            <p class="exp_description">HackSC, MLH Local Hack Day, hack nights.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row" style="margin-bottom:20px">
-                        <div class="col-lg-offset-2 col-lg-3 col-md-offset-2 col-md-3 col-sm-offset-2 col-sm-3 col-xs-offset-1 col-xs-4">
-                            <p class="experience">High School Robotics Club</p>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                            <p class="exp_roles">founding member</p>
-                            <p class="exp_time">2014-2015</p>
-                            <p class="exp_description">Arduino and the C language.</p>
-                        </div>
-                    </div>
-                    
-<!--
-                    <div class="row">
-                        <div class="col-lg-offset-3 col-lg-2 col-md-offset-3 col-md-2 col-sm-offset-3 col-sm-2 col-xs-4">
-                        
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"></div>
-                    </div>
--->
-				</div> <!--close experience-->
-            
-            <div id="projects" style="margin-top:150px;margin-bottom:80px;text-align:center">
-                <h1 style="text-align:left;padding-left:28vw;padding-bottom:15px">PROJECTS</h1>
-                
-                <div class="project">
-                <div class="project_left">
-                    <p class="project_name">SQUAD</p>
-                    <p class="project_time">nov 2015</p>
-                </div>
-                <div class="project_right">
-                    <p class="project_description">iOS app that finds sports buddies based on sport, ability, location, etc. Swift. Implemented Facebook API for Facebook login page. Created <a href='/squad/index.html'>landing website</a>. HTML, CSS, jQuery. Created sports icons with Adobe Photoshop. <span class="collaboration">*collaboration project (HackSC 2015)</span></p>
+                    <div class="course_description">{{course.description}}</div>
                 </div>
             </div>
-            
-            <div class="project">
-                <div class="project_left">
-                    <p class="project_name">Markov Chain Sentence Generator</p>
-                    <p class="project_time">nov 2015</p>
-                </div>
-                <div class="project_right">
-                    <p class="project_description">Python projects that generates sentences from a finite state grammar based on existing texts (eg. Harry Potter).</p>
-                </div>
-            </div>
-            
-            <div class="project">
-                <div class="project_left">
-                    <p class="project_name">Hacker Matchers</p>
-                    <p class="project_time">oct 2015</p>
-                </div>
-                <div class="project_right">
-                    <p class="project_description">Website that matches hackers into teams based on skills and interests. HTML, CSS, jQuery. <span class="collaboration">*collaboration project</span></p>
-                </div>
-            </div>
-            
-            <div class="project">
-                <div class="project_left">
-                    <p class="project_name">High School Yearbook Cover Design</p>
-                    <p class="project_time">2013, 2014</p>
-                </div>
-                <div class="project_right">
-                    <p class="project_description">View <a id="yearbook" href='javascript:;'>2013</a> and <a id="yearbook2" href='javascript:;'>2014</a> designs, both selected for respective years. Created with Adobe Photoshop and Wacom tablet.</p>
-                </div>
-            </div>
-                
-                
-                 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="layout:inline; margin-top:35px">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                       <li data-target="#myCarousel" data-slide-to="1"></li>
-                       <li data-target="#myCarousel" data-slide-to="2"></li>
-                       <li data-target="#myCarousel" data-slide-to="3"></li>
-                       <li data-target="#myCarousel" data-slide-to="4"></li>
-                       <li data-target="#myCarousel" data-slide-to="5"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox" style="text-align:center">
-                       <div class="item active">
-                          <img class="carousel_image" src="files/green.jpg" alt="tomie">
-                       </div>
-                       <div class="item">
-                          <img class="carousel_image" src="files/IMG_2995.jpg" alt="vase">
-                       </div>
-                       <div class="item">
-                          <img class="carousel_image" src="files/IMG_2927.jpg" alt="puck">
-                       </div>
-                       <div class="item">
-                          <img class="carousel_image" src="files/squad_screenshot.jpg" alt="haku">
-                       </div>
-                       <div class="item">
-                          <img class="carousel_image" src="files/yearbook13.jpg" alt="doge">
-                       </div>
-                       <div class="item">
-                          <img class="carousel_image" src="files/yearbook_cover.jpg" alt="cover">
-                       </div>
-                    </div>
-                    
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <img class="control_arrow" src="images/left.png" style="max-height:10vw" alt=""/>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <img class="control_arrow" src="images/right.png" style="max-height:10vw" alt=""/>
-                    </a>
-                 </div> <!--close carousel-->
-            
-            </div> <!--close projects-->
-            
-            
-            
-			</div> <!--close resume-->
-            
-            <div id="links">
-                <a href="https://www.facebook.com/nina.ling.35" target="_blank"><img src="images/facebook.png" class="link_icon"/></a>
-                <a href="https://github.com/ninaling" target="_blank"><img src="images/github.png" class="link_icon"/></a>
-                <a href="https://www.linkedin.com/profile/view?id=AAIAABAzZ5sBMtucMoiVXneD7yMeqUcgL6relPY&trk=nav_responsive_tab_profile_pic" target="_blank"><img src="images/linkedin.png" class="link_icon"/></a>
-            </div>
-            <div id="email"><a href="mailto:ninaling@ucla.edu">ninaling@ucla.edu</a></div>
+        </div>
 
-		</div> <!--close next bit-->
-	</body>
+    </body>
 </html>

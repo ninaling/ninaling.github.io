@@ -1,0 +1,131 @@
+/*
+@font-face {
+    font-family: Arvo_Bold, 'Ariel Black';
+    src: url(Arvo-Bold.ttf);
+}
+
+@font-face {
+    font-family: Arvo, 'Ariel Black';
+    src: url(Arvo-Regular.ttf);
+}
+*/
+
+.arvo_font {
+    font-size:55px;  
+    color:#4575ff;
+    font-family: Arvo, 'Ariel Black';
+    font-weight: 700;
+}
+
+body, html {
+    margin:0;
+    padding:0;
+    
+    width:100%;
+    height:100%;
+}
+
+.row{
+    width:100vw;
+    margin: none;
+}
+
+#container{
+    overflow-y:auto;
+    overflow-x:hidden;
+    
+    width:100%;
+    
+    margin:0;
+    padding:0;
+}
+
+.title_page{
+    background-color:#4575ff;   
+    height:28vh;   
+    width:100vw;
+
+    border:none;    
+}
+
+#title_icons{
+    height: 15vh;
+/*    width: 100vw;*/
+    
+    border:none;
+}
+
+.title {
+    font-family: Arvo, 'Ariel Black';
+    font-size:80px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+/*    margin-left:15px;*/
+/*    margin-top:40%;*/
+    color:white;
+}
+
+.centered{
+    text-align: center;   
+}
+
+#catch_phrase {
+    text-align: center;
+    height:39vh;
+/*    margin: 60%;*/
+    padding-top: 25px;
+    font-size: 5vw;
+}
+
+#lets_go_button {
+    background-color: #ff8959;
+    color:white;
+    border-radius: 5px;
+    padding:25px;
+    font-size: 25px;
+    font-family: Arvo, 'Ariel Black';
+    height: 18vh;
+}
+
+#lets_go_button:hover {
+    background-color: #ff7942;
+    cursor: pointer;
+}
+
+#next_bit_container {
+    height: 100vh;
+    width:100vw;
+    font-size: 35px;
+    font-family: Arvo, 'Ariel Black';
+}
+
+.left_text {
+    text-align: right; 
+    margin-left: none;
+}
+
+.right_text {
+    text-align: left:  
+    margin-right: none;
+}
+
+.screenshot_image {
+    max-height: 35vw;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #catch_phrase{
+        font-size: 6vw;   
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .left_text, .right_text{
+        text-align: center;
+        margin: none;
+    }
+    
+    #catch_phrase{
+        font-size: 7vw;   
+    }
+}

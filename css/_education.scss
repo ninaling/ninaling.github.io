@@ -3,6 +3,9 @@
 #education {
     margin-top: 20vh;
     @extend .block;
+    #royce{
+        @extend .content;
+    }
     #education_header{
         @extend .content;
         #education_title{

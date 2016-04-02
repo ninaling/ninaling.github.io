@@ -14,11 +14,11 @@
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
-.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+.content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
   width: 50vw;
   text-align: left; }
   @media screen and (max-width: 850px) {
-    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+    .content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
       width: 80vw; } }
 
 body {
@@ -52,11 +52,11 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
-.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+.content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
   width: 50vw;
   text-align: left; }
   @media screen and (max-width: 850px) {
-    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+    .content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
       width: 80vw; } }
 
 #landing {
@@ -94,11 +94,11 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
-.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+.content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
   width: 50vw;
   text-align: left; }
   @media screen and (max-width: 850px) {
-    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+    .content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
       width: 80vw; } }
 
 #about {
@@ -127,11 +127,11 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
-.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+.content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
   width: 50vw;
   text-align: left; }
   @media screen and (max-width: 850px) {
-    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+    .content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
       width: 80vw; } }
 
 #education {
@@ -173,11 +173,11 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
-.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+.content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
   width: 50vw;
   text-align: left; }
   @media screen and (max-width: 850px) {
-    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+    .content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
       width: 80vw; } }
 
 #skills {
@@ -204,11 +204,11 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
-.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+.content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
   width: 50vw;
   text-align: left; }
   @media screen and (max-width: 850px) {
-    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+    .content, #about #about_content, #education #royce, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
       width: 80vw; } }
 
 #portfolio {

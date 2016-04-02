@@ -1,15 +1,8 @@
-$primary: 'Open Sans', sans-serif;
-$secondary: 'Lato', sans-serif;
-
-$break-small: 850px;
+@import "_block";
 
 #landing {
     height: 100vh;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .block;
     
     #title {
         font-family: $primary, sans-serif;

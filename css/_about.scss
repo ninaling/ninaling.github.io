@@ -1,27 +1,8 @@
-$primary: 'Open Sans', sans-serif;
-$secondary: 'Lato', sans-serif;
-
-$title_weight: 300;
-$title_color: darkgray;
-
-$break-small: 850px;
-
-.title {
-    font-family: $primary;
-    font-weight: $title_weight;
-    color: $title_color;
-}
+@import "_block";
 
 #about{
-//    min-height: 60vh;
     margin-top: 10vh;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    text-align: center;
+    @extend .block;
     #profile_pic_container{
         #profile_pic_canvas{
             max-height: 30vw;
@@ -31,13 +12,7 @@ $break-small: 850px;
         }
     }
     #about_content{
-        width: 50vw;
-        text-align: left;
-        
-        @media screen and (max-width: $break-small) {
-            width: 80vw;
-        }
-        
+        @extend .content;
         #about_content_title{
             @extend .title;
         }

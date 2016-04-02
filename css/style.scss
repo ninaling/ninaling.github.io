@@ -1,3 +1,5 @@
+@import "_block";
+
 body {
     background-color: #F9F5F4;
     display: block;
@@ -9,11 +11,7 @@ body {
     min-height: 15vh;
     width: 100vw;
     background-color: white;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .block;
     #under_construction_message {
         max-width: 60vw;
         #previous_version_link {
@@ -25,3 +23,5 @@ body {
 @import "_landing";
 @import "_about";
 @import "_education";
+@import "_skills-experience";
+@import "_portfolio";

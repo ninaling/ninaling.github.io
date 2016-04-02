@@ -1,35 +1,10 @@
-$primary: 'Open Sans', sans-serif;
-$secondary: 'Lato', sans-serif;
-
-$title_weight: 300;
-$title_color: darkgray;
-
-.title {
-    font-family: $primary;
-    font-weight: $title_weight;
-    color: $title_color;
-}
-
-.date {
-    font-family: $secondary;   
-    font-weight: 300;
-}
+@import "_block";
 
 #education {
-//    min-height: 60vh;
     margin-top: 20vh;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    @extend .block;
     #education_header{
-        width: 50vw;
-        text-align: left;
-        @media screen and (max-width: $break-small) {
-            width: 80vw;
-        }
+        @extend .content;
         #education_title{
             @extend .title;
         }
@@ -45,34 +20,26 @@ $title_color: darkgray;
         }
     }
     #education_courses{
-        width: 50vw;
-        text-align: left;
-        @media screen and (max-width: $break-small) {
-            width: 80vw;
-        }
+        @extend .content;
+        margin: none;
+        padding: none;
         #courses_title{
             @extend .title;
         }
         .course{
-            width: 100%;
-            margin: none;
-            padding: none;
             .course_title{
-                @extend .course;
-                width: 18vw;
+                width: 20%;
                 display: inline;
                 text-align: right;
                 font-family: $primary;
                 .course_title_main{
                     font-weight: 600;
-//                    color: red;
                 }
             }
             .course_description{
-                @extend .course;
-                width: 28vw;
+                width: 30%;
                 display: inline;  
-                text-align: right;
+                text-align: left;
                 font-family: $secondary;
             }
         }

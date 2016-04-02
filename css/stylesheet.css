@@ -1,3 +1,26 @@
+.block, #under_construction, #landing, #about, #education, #skills, #experience, #portfolio {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.title, #about #about_content #about_content_title, #education #education_header #education_title, #education #education_courses #courses_title, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: darkgray; }
+
+.date, #education #education_header #education_college_date {
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
+.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  width: 50vw;
+  text-align: left; }
+  @media screen and (max-width: 850px) {
+    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+      width: 80vw; } }
+
 body {
   background-color: #F9F5F4;
   display: block;
@@ -7,24 +30,37 @@ body {
 #under_construction {
   min-height: 15vh;
   width: 100vw;
-  background-color: white;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-color: white; }
   #under_construction #under_construction_message {
     max-width: 60vw; }
     #under_construction #under_construction_message #previous_version_link {
       cursor: pointer; }
 
-#landing {
-  height: 100vh;
+.block, #under_construction, #landing, #about, #education, #skills, #experience, #portfolio {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.title, #about #about_content #about_content_title, #education #education_header #education_title, #education #education_courses #courses_title, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: darkgray; }
+
+.date, #education #education_header #education_college_date {
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
+.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  width: 50vw;
+  text-align: left; }
+  @media screen and (max-width: 850px) {
+    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+      width: 80vw; } }
+
+#landing {
+  height: 100vh; }
   #landing #title {
     font-family: "Open Sans", sans-serif, sans-serif;
     font-size: 4vw;
@@ -42,35 +78,14 @@ body {
       #landing #title_subtext {
         font-size: 3vh; } }
 
-.title, #about #about_content #about_content_title, #education #education_header #education_title, #education #education_courses #courses_title {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  color: darkgray; }
-
-#about {
-  margin-top: 10vh;
+.block, #under_construction, #landing, #about, #education, #skills, #experience, #portfolio {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  text-align: center; }
-  #about #profile_pic_container #profile_pic_canvas {
-    max-height: 30vw; }
-    @media screen and (max-width: 850px) {
-      #about #profile_pic_container #profile_pic_canvas {
-        max-height: 45vw; } }
-  #about #about_content {
-    width: 50vw;
-    text-align: left; }
-    @media screen and (max-width: 850px) {
-      #about #about_content {
-        width: 80vw; } }
-    #about #about_content .about_content_p {
-      font-family: "Lato", sans-serif; }
+  align-items: center; }
 
-.title, #about #about_content #about_content_title, #education #education_header #education_title, #education #education_courses #courses_title {
+.title, #about #about_content #about_content_title, #education #education_header #education_title, #education #education_courses #courses_title, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: darkgray; }
@@ -79,46 +94,124 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
-#education {
-  margin-top: 20vh;
+.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  width: 50vw;
+  text-align: left; }
+  @media screen and (max-width: 850px) {
+    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+      width: 80vw; } }
+
+#about {
+  margin-top: 10vh; }
+  #about #profile_pic_container #profile_pic_canvas {
+    max-height: 30vw; }
+    @media screen and (max-width: 850px) {
+      #about #profile_pic_container #profile_pic_canvas {
+        max-height: 45vw; } }
+  #about #about_content .about_content_p {
+    font-family: "Lato", sans-serif; }
+
+.block, #under_construction, #landing, #about, #education, #skills, #experience, #portfolio {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center; }
-  #education #education_header {
-    width: 50vw;
-    text-align: left; }
-    @media screen and (max-width: 850px) {
-      #education #education_header {
-        width: 80vw; } }
-    #education #education_header #education_college {
-      font-family: "Lato", sans-serif;
-      font-weight: bold; }
-    #education #education_header .education_college_des {
-      font-family: "Open Sans", sans-serif; }
+  align-items: center; }
+
+.title, #about #about_content #about_content_title, #education #education_header #education_title, #education #education_courses #courses_title, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: darkgray; }
+
+.date, #education #education_header #education_college_date {
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
+.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  width: 50vw;
+  text-align: left; }
+  @media screen and (max-width: 850px) {
+    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+      width: 80vw; } }
+
+#education {
+  margin-top: 20vh; }
+  #education #education_header #education_college {
+    font-family: "Lato", sans-serif;
+    font-weight: bold; }
+  #education #education_header .education_college_des {
+    font-family: "Open Sans", sans-serif; }
   #education #education_courses {
-    width: 50vw;
-    text-align: left; }
-    @media screen and (max-width: 850px) {
-      #education #education_courses {
-        width: 80vw; } }
-    #education #education_courses .course, #education #education_courses .course .course_title, #education #education_courses .course .course_description {
-      width: 100%;
-      margin: none;
-      padding: none; }
-      #education #education_courses .course .course_title {
-        width: 18vw;
-        display: inline;
-        text-align: right;
-        font-family: "Open Sans", sans-serif; }
-        #education #education_courses .course .course_title .course_title_main {
-          font-weight: 600; }
-      #education #education_courses .course .course_description {
-        width: 28vw;
-        display: inline;
-        text-align: right;
-        font-family: "Lato", sans-serif; }
+    margin: none;
+    padding: none; }
+    #education #education_courses .course .course_title {
+      width: 20%;
+      display: inline;
+      text-align: right;
+      font-family: "Open Sans", sans-serif; }
+      #education #education_courses .course .course_title .course_title_main {
+        font-weight: 600; }
+    #education #education_courses .course .course_description {
+      width: 30%;
+      display: inline;
+      text-align: left;
+      font-family: "Lato", sans-serif; }
+
+.block, #under_construction, #landing, #about, #education, #skills, #experience, #portfolio {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.title, #about #about_content #about_content_title, #education #education_header #education_title, #education #education_courses #courses_title, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: darkgray; }
+
+.date, #education #education_header #education_college_date {
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
+.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  width: 50vw;
+  text-align: left; }
+  @media screen and (max-width: 850px) {
+    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+      width: 80vw; } }
+
+#skills {
+  margin-top: 20vh;
+  min-height: 20vh; }
+
+#experience {
+  margin-top: 20vh;
+  min-height: 20vh; }
+
+.block, #under_construction, #landing, #about, #education, #skills, #experience, #portfolio {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.title, #about #about_content #about_content_title, #education #education_header #education_title, #education #education_courses #courses_title, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: darkgray; }
+
+.date, #education #education_header #education_college_date {
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
+.content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+  width: 50vw;
+  text-align: left; }
+  @media screen and (max-width: 850px) {
+    .content, #about #about_content, #education #education_header, #education #education_courses, #skills #skills_title, #experience #experience_title, #portfolio #portfolio_title {
+      width: 80vw; } }
+
+#portfolio {
+  margin-top: 20vh; }
 
 /*# sourceMappingURL=stylesheet.css.map */

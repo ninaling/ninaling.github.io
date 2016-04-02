@@ -1,0 +1,34 @@
+.block {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+$primary: 'Open Sans', sans-serif;
+$secondary: 'Lato', sans-serif;
+
+$title_weight: 300;
+$title_color: darkgray;
+
+$break-small: 850px;
+
+.title {
+    font-family: $primary;
+    font-weight: $title_weight;
+    color: $title_color;
+}
+
+.date {
+    font-family: $secondary;   
+    font-weight: 300;
+}
+
+.content {
+    width: 50vw;
+    @media screen and (max-width: $break-small) {
+        width: 80vw;
+    }
+    text-align: left;
+}

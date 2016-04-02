@@ -1,0 +1,10 @@
+@import "_block";
+
+#portfolio {
+    margin-top: 20vh;
+    @extend .block;
+    #portfolio_title {
+        @extend .content;
+        @extend .title;   
+    }
+}

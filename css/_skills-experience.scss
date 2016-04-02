@@ -1,0 +1,21 @@
+@import "_block";
+
+#skills {
+    margin-top: 20vh;
+    min-height: 20vh;
+    @extend .block;
+    #skills_title {
+        @extend .title;
+        @extend .content;
+    }
+}
+
+#experience {
+    margin-top: 20vh;
+    min-height: 20vh;
+    @extend .block;
+    #experience_title {
+        @extend .title;
+        @extend .content;
+    }
+}

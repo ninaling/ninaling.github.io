@@ -31,8 +31,6 @@
         }
         .course{
             .course_title{
-                width: 20%;
-                display: inline;
                 text-align: right;
                 font-family: $primary;
                 .course_title_main{
@@ -40,8 +38,7 @@
                 }
             }
             .course_description{
-                width: 30%;
-                display: inline;  
+                text-indent: 3em;
                 text-align: left;
                 font-family: $secondary;
             }

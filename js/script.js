@@ -27,6 +27,33 @@ myApp.controller("myController", function($scope){
         }
     ];
     
+    $scope.web=[
+        {
+            title: "Personal Website",
+            time: "Apr. 2016",
+            description: "stuff"
+        },
+        {
+            title: "Ethereal Broth",
+            time: "Nov. 2015",
+            description: "funny things"
+        }
+    ];
+    
+    $scope.software=[
+        {
+            title: "Markov Chain Sentence Generator",
+            time: "Nov. 2015",
+            description: "cool stuff"
+        },
+        {
+            title: "Squad",
+            time: "Nov. 2015",
+            description: "cliche app"
+        }
+    ];
+            
+    
     $scope.getCourses=function(){
         return this.courses;   
     }

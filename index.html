@@ -2,17 +2,22 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
     <!--Google Fonts-->
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-        
+
     <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="/resources/demos/style.css">
+
     <!--AngularJS-->
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        
+
     <!--Bootsrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -32,18 +37,26 @@
 
         <div id="under_construction">
             <div id="under_construction_message">
-                This site is currently under construction! For the previous version, please click <a id="previous_version_link" href="previous/index.html">here</a>. <span id="remove_under_construction" class="glyphicon glyphicon-remove"></span>
+                Thank you for visiting! This site is currently under construction. For the previous version, please click <a id="previous_version_link" href="previous/index.html">here</a>. <span id="remove_under_construction" class="glyphicon glyphicon-remove"></span>
             </div>
         </div>
-        
+
+        <div id="navigator">
+            <div id="top_option" class="navigator_option">top</div>
+            <div id="about_option" class="navigator_option">about</div>
+            <div id="education_option" class="navigator_option">education</div>
+            <div id="experience_option" class="navigator_option">experience</div>
+            <div id="portfolio_option" class="navigator_option">portfolio</div>
+        </div>
+
         <div id="landing">
-            <div id="title">xin (NINA) ling</div>    
+            <div id="title">xin (NINA) ling</div>
             <div id="title_img_container">
                 <img id="title_img" src="images/apple.png"/>
             </div>
             <div id="title_subtext">developer / designer</div>
         </div>
-        
+
         <div id="about">
             <div id="profile_pic_container">
                 <canvas id="profile_pic_canvas" width="380" height="340"></canvas>
@@ -59,7 +72,7 @@
                 </p>
             </div>
         </div>
-        
+
         <div id="education">
             <img id="royce" src="images/royce.png"/>
             <div id="education_header">
@@ -71,27 +84,59 @@
             </div>
             <div id="education_courses">
                 <h3 id="courses_title">RELEVANT COURSES</h3>
-                <div class="course" ng-repeat="course in getCourses()">
-                    <div class="course_title">
-                        <div class="course_title_main">{{course.title}}</div>
-                        <div class="course_title_subtitle">{{course.subtitle}}</div>
-                    </div>
-                    <div class="course_description">{{course.description}}</div>
-                </div>
+                <table id="courses">
+                    <tr class="course" ng-repeat="course in getCourses()">
+                        <td class="course_title" valign="top">
+                            <div class="course_title_main">{{course.inprogress}}{{course.title}}</div>
+                            <div class="course_title_subtitle">{{course.subtitle}}</div>
+                        </td>
+                        <td class="course_description" valign="top">{{course.description}}</td>
+                    </tr>
+                </table>
             </div>
         </div>
-        
-        <div id="skills">
-            <h2 id="skills_title">SKILLS</h2>
-        </div>
-        
+
         <div id="experience">
             <h2 id="experience_title">EXPERIENCE</h2>
         </div>
 
         <div id="portfolio">
             <h2 id="portfolio_title">PORTFOLIO</h2>
+<!--
+            <ol id="selectable">
+                <li class="ui-widget-content">Item 1</li>
+                <li class="ui-widget-content">Item 2</li>
+                <li class="ui-widget-content">Item 3</li>
+                <li class="ui-widget-content">Item 4</li>
+                <li class="ui-widget-content">Item 5</li>
+                <li class="ui-widget-content">Item 6</li>
+                <li class="ui-widget-content">Item 7</li>
+            </ol>
+-->
+
+            <div id="portfolio_options">
+                <h3 id="web_dev_option">WEB</h3>
+                <h3 id="software_option">SOFTWARE</h3>
+                <h3 id="design_option">DESIGN</h3>
+                <h3 id="misc_option">MISC</h3>
+            </div>
+
+            <div id="portfolio_content">
+                <div id="web_dev_content">
+
+                </div>
+                <div id="software_content">
+
+                </div>
+                <div id="design_content">
+
+                </div>
+                <div id="misc_option">
+
+                </div>
+            </div>
+
         </div>
-        
+
     </body>
 </html>

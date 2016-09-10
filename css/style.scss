@@ -20,8 +20,27 @@ body {
     }
 }
 
+#navigator {
+    position: fixed;
+    top: 30vh;
+    right: 0;
+    padding-right: 20px;
+    text-align: right;
+    @extend .title;
+    color: black !important;
+    font-size: 20px;
+    @media screen and (max-width: $break-small) {
+        top: 15vh;
+        font-size: 12px;
+    }
+    .navigator_option {
+        cursor: pointer;  
+        opacity: 0.5;
+    }
+}
+
 @import "_landing";
 @import "_about";
 @import "_education";
-@import "_skills-experience";
+@import "_experience";
 @import "_portfolio";

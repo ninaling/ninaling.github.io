@@ -8,7 +8,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 
     <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -18,125 +18,17 @@
     <!--AngularJS-->
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
-    <!--Bootsrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
     <!--CSS-->
         <link rel="stylesheet" href="css/stylesheet.css" type="text/css"/>
 
     <!--Javascript-->
         <script src="js/script.js" type="text/javascript"></script>
-        <script src="js/profile-path.js" type="text/javascript"></script>
         <script src="js/jquery.js" type="text/javascript"></script>
 
         <title>nina ling</title>
 
     </head>
     <body ng-app="myModule" ng-controller="myController">
-
-        <div id="under_construction">
-            <div id="under_construction_message">
-                Thank you for visiting! This site is currently under construction. For the previous version, please click <a id="previous_version_link" href="previous/index.html">here</a>. <span id="remove_under_construction" class="glyphicon glyphicon-remove"></span>
-            </div>
-        </div>
-
-        <div id="navigator">
-            <div id="top_option" class="navigator_option">top</div>
-            <div id="about_option" class="navigator_option">about</div>
-            <div id="education_option" class="navigator_option">education</div>
-            <div id="experience_option" class="navigator_option">experience</div>
-            <div id="portfolio_option" class="navigator_option">portfolio</div>
-        </div>
-
-        <div id="landing">
-            <div id="title">xin (NINA) ling</div>
-            <div id="title_img_container">
-                <img id="title_img" src="images/apple.png"/>
-            </div>
-            <div id="title_subtext">developer / designer</div>
-        </div>
-
-        <div id="about">
-            <div id="profile_pic_container">
-                <canvas id="profile_pic_canvas" width="380" height="340"></canvas>
-            </div>
-            <div id="about_content">
-                <h2 id="about_content_title">ABOUT</h2>
-                <p class="about_content_p">Hey, nice hair. </p>
-                <p class="about_content_p">I'm Nina, a Chinese Canadian currently studying studying in Los Angeles. In the past, I have lived in Wuxi (Jiangsu Province), Toronto, and finally Dongguan (Canton), where I attended an American international school for 10 years. </p>
-                <p class="about_content_p">I am interested in web and software development, graphic design and digital art. I believe in the merging of design and illustration in order to add a personal touch to any website or app. </p>
-                <p class="about_content_p">In addition to my studies and hobbies, I often travel with my family. The profile picture here was taken at the Grand Canyon this past summer. Some countries I've visited include Scotland, France, Malaysia, and Cambodia.</p>
-                <p class="about_content_p">
-                    I also like Malcolm Gladwell's books and prefer cracking open soft boiled eggs from the fat ends.
-                </p>
-            </div>
-        </div>
-
-        <div id="education">
-            <img id="royce" src="images/royce.png"/>
-            <div id="education_header">
-                <h2 id="education_title">EDUCATION</h2>
-                <h3 id="education_college">University of California - Los Angeles</h3>
-                <p class="education_college_des">pursuing bachelors' degree in Computer Science &amp; Engineering</p>
-                <p class="education_college_des">3.921 GPA</p>
-                <p id="education_college_date">2015-2019 (predicted)</p>
-            </div>
-            <div id="education_courses">
-                <h3 id="courses_title">RELEVANT COURSES</h3>
-                <table id="courses">
-                    <tr class="course" ng-repeat="course in getCourses()">
-                        <td class="course_title" valign="top">
-                            <div class="course_title_main">{{course.inprogress}}{{course.title}}</div>
-                            <div class="course_title_subtitle">{{course.subtitle}}</div>
-                        </td>
-                        <td class="course_description" valign="top">{{course.description}}</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <div id="experience">
-            <h2 id="experience_title">EXPERIENCE</h2>
-        </div>
-
-        <div id="portfolio">
-            <h2 id="portfolio_title">PORTFOLIO</h2>
-<!--
-            <ol id="selectable">
-                <li class="ui-widget-content">Item 1</li>
-                <li class="ui-widget-content">Item 2</li>
-                <li class="ui-widget-content">Item 3</li>
-                <li class="ui-widget-content">Item 4</li>
-                <li class="ui-widget-content">Item 5</li>
-                <li class="ui-widget-content">Item 6</li>
-                <li class="ui-widget-content">Item 7</li>
-            </ol>
--->
-
-            <div id="portfolio_options">
-                <h3 id="web_dev_option">WEB</h3>
-                <h3 id="software_option">SOFTWARE</h3>
-                <h3 id="design_option">DESIGN</h3>
-                <h3 id="misc_option">MISC</h3>
-            </div>
-
-            <div id="portfolio_content">
-                <div id="web_dev_content">
-
-                </div>
-                <div id="software_content">
-
-                </div>
-                <div id="design_content">
-
-                </div>
-                <div id="misc_option">
-
-                </div>
-            </div>
-
-        </div>
 
     </body>
 </html>

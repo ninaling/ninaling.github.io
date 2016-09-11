@@ -3,7 +3,7 @@ $(document).ready(function(){
     childType: "section",
     time: 500,
     windowsOn: 0,
-    direction: 'y',
+    direction: 'x',
     easing: "easeInOutQuart"
   });
   // var ascensorInstance = ascensor.data('ascensor');

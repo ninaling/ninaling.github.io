@@ -1,1 +1,31 @@
 @import "_constants";
+
+#left-brain {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  .left-brain-img {
+    height: 90vh;
+    max-width: 50vw;
+
+    align-self: flex-end;
+  }
+}
+
+#right-brain {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  .right-brain-img {
+    height: 90vh;
+    max-width: 50vw;
+
+    align-self: flex-end;
+  }
+}

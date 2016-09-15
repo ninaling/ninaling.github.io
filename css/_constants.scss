@@ -2,6 +2,7 @@ $web-font: 'Open Sans', sans-serif;
 $font-regular: 300;
 $font-light: 100;
 
+$tiny-break: 325px;
 $small-break: 520px;
 $medium-break: 850px;
 $large-break: 1000px;
@@ -10,6 +11,18 @@ html, body, section {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: $small-break) {
+    height: 80vh;
+  }
 }
 
 * {

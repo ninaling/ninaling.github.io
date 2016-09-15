@@ -1,71 +1,67 @@
 @import "_constants";
+@import "_brain";
 
-.section-title {
-  font-size: 12px;
+.small-section {
+  width: 100%;
+  height: 100%;
 
-  @media screen and (min-width: $small-break) {
-    font-size: 18px;
-  }
-}
-
-#left-brain {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-#right-brain {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-#left-brain-img, #left-brain-img-narrow {
-  path {
-    stroke-width: 1;
-  }
-}
-
-#right-brain-img, #right-brain-img-narrow {
-  path {
-    stroke-width: 1.5;
+  @media screen and (orientation: portrait) and (max-width: $small-break){
+    display: -webkit-flex;
+    display: flex;
   }
 
-  .eye {
-    path {
-      stroke-width: 1;
+  @media not screen and (orientation: portrait) and (max-width: $small-break){
+    display: none;
+  }
+
+  .section-text-small {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+
+    .section-title-small {
+      font-size: 14px;
+    }
+
+    .section-body-small {
+      margin-top: 10px;
+      font-size: 9px;
     }
   }
 }
 
-#left-brain-img, #right-brain-img {
-  @media screen and (orientation: landscape){
-    height: 90vh;
-    max-height: 90vh;
-    max-width: 45vw;
-    align-self: flex-end;
-    display: block;
-  }
+.main-section {
+  width: 100%;
+  height: 100%;
 
-  @media screen and (orientation: portrait){
+  @media screen and (orientation: portrait) and (max-width: $small-break){
     display: none;
   }
-}
 
-#left-brain-img-narrow, #right-brain-img-narrow {
-  @media screen and (orientation: portrait){
-    height: 90vh;
-    max-height: 90vh;
-    max-width: 45vw;
-    align-self: flex-end;
-    display: block;
+  @media not screen and (orientation: portrait) and (max-width: $small-break){
+    display: -webkit-flex;
+    display: flex;
   }
 
-  @media screen and (orientation: landscape){
-    display: none;
+  .section-text {
+    padding: 10px;
+
+    .section-title {
+      font-size: 14px;
+
+      @media screen and (min-width: $small-break) {
+        font-size: 18px;
+      }
+    }
+
+    .section-body {
+      margin-top: 10px;
+      font-size: 9px;
+
+      @media screen and (min-width: $small-break) {
+        font-size: 14px;
+      }
+    }
   }
 }

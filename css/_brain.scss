@@ -1,0 +1,68 @@
+#left-brain {
+  .small-section {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    object {
+      align-self: flex-start;
+    }
+  }
+
+  .main-section {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+#right-brain {
+  .small-section {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    object {
+      align-self: flex-end;
+    }
+  }
+
+  .main-section {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+#left-brain-img, #left-brain-img-narrow, #right-brain-img, #right-brain-img-narrow {
+  align-self: flex-end;
+  height: 90vh;
+
+  @media screen and (orientation: portrait) {
+    @media screen and (max-width: $tiny-break) {
+      height: 50vh;
+    }
+
+    @media screen and (max-width: $small-break) {
+      height: 70vh;
+    }
+  }
+}
+
+#left-brain-img, #left-brain-img-narrow {
+  path {
+    stroke-width: 1;
+  }
+}
+
+#right-brain-img, #right-brain-img-narrow {
+  path {
+    stroke-width: 1.5;
+  }
+
+  .eye {
+    path {
+      stroke-width: 1;
+    }
+  }
+}

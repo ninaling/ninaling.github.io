@@ -1,18 +1,19 @@
 @import "_constants";
 
+.section-title {
+  font-size: 12px;
+
+  @media screen and (min-width: $small-break) {
+    font-size: 18px;
+  }
+}
+
 #left-brain {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-
-  .left-brain-img {
-    height: 90vh;
-    max-width: 50vw;
-
-    align-self: flex-end;
-  }
 }
 
 #right-brain {
@@ -21,11 +22,50 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
 
-  .right-brain-img {
+#left-brain-img, #left-brain-img-narrow {
+  path {
+    stroke-width: 1;
+  }
+}
+
+#right-brain-img, #right-brain-img-narrow {
+  path {
+    stroke-width: 1.5;
+  }
+
+  .eye {
+    path {
+      stroke-width: 1;
+    }
+  }
+}
+
+#left-brain-img, #right-brain-img {
+  @media screen and (orientation: landscape){
     height: 90vh;
-    max-width: 50vw;
-
+    max-height: 90vh;
+    max-width: 45vw;
     align-self: flex-end;
+    display: block;
+  }
+
+  @media screen and (orientation: portrait){
+    display: none;
+  }
+}
+
+#left-brain-img-narrow, #right-brain-img-narrow {
+  @media screen and (orientation: portrait){
+    height: 90vh;
+    max-height: 90vh;
+    max-width: 45vw;
+    align-self: flex-end;
+    display: block;
+  }
+
+  @media screen and (orientation: landscape){
+    display: none;
   }
 }

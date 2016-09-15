@@ -3,16 +3,21 @@ html, body, section {
   padding: 0;
   overflow: hidden; }
 
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+.section-title {
+  font-size: 12px; }
+  @media screen and (min-width: 520px) {
+    .section-title {
+      font-size: 18px; } }
+
 #left-brain {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center; }
-  #left-brain .left-brain-img {
-    height: 90vh;
-    max-width: 50vw;
-    align-self: flex-end; }
 
 #right-brain {
   display: -webkit-flex;
@@ -20,9 +25,35 @@ html, body, section {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center; }
-  #right-brain .right-brain-img {
+
+#left-brain-img path, #left-brain-img-narrow path {
+  stroke-width: 1; }
+
+#right-brain-img path, #right-brain-img-narrow path {
+  stroke-width: 1.5; }
+#right-brain-img .eye path, #right-brain-img-narrow .eye path {
+  stroke-width: 1; }
+
+@media screen and (orientation: landscape) {
+  #left-brain-img, #right-brain-img {
     height: 90vh;
-    max-width: 50vw;
-    align-self: flex-end; }
+    max-height: 90vh;
+    max-width: 45vw;
+    align-self: flex-end;
+    display: block; } }
+@media screen and (orientation: portrait) {
+  #left-brain-img, #right-brain-img {
+    display: none; } }
+
+@media screen and (orientation: portrait) {
+  #left-brain-img-narrow, #right-brain-img-narrow {
+    height: 90vh;
+    max-height: 90vh;
+    max-width: 45vw;
+    align-self: flex-end;
+    display: block; } }
+@media screen and (orientation: landscape) {
+  #left-brain-img-narrow, #right-brain-img-narrow {
+    display: none; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

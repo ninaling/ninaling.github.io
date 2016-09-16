@@ -1,0 +1,29 @@
+#hands {
+  .main-section {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #coffee-img {
+      width: 65vw;
+      align-self: flex-start;
+
+      path {
+        stroke-width: 1.5;
+      }
+    }
+
+    .section-text {
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: 5px;
+
+      @media screen and (min-width: $medium-break) {
+        padding-left: 250px;
+        padding-right: 250px;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 @import "_constants";
 @import "_brain";
+@import "_hands";
 
 .small-section {
   width: 100%;
@@ -48,19 +49,43 @@
     padding: 10px;
 
     .section-title {
-      font-size: 14px;
+      font-size: 12px;
+
+      @media screen and (orientation: portrait) {
+        font-size: 14px;
+      }
 
       @media screen and (min-width: $small-break) {
-        font-size: 18px;
+        font-size: 14px;
+
+        @media screen and (orientation: portrait) {
+          font-size: 16px;
+        }
+
+        @media screen and (min-width: $medium-break) {
+          font-size: 18px;
+        }
       }
     }
 
     .section-body {
       margin-top: 10px;
-      font-size: 9px;
+      font-size: 8px;
+
+      @media screen and (orientation: portrait) {
+        font-size: 10px;
+      }
 
       @media screen and (min-width: $small-break) {
-        font-size: 14px;
+        font-size: 10px;
+
+        @media screen and (orientation: portrait) {
+          font-size: 12px;
+        }
+
+        @media screen and (min-width: $medium-break) {
+          font-size: 12px;
+        }
       }
     }
   }

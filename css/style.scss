@@ -1,6 +1,8 @@
 @import "_constants";
 @import "_brain";
 @import "_hands";
+@import "_feet";
+@import "_contact";
 
 .small-section {
   width: 100%;
@@ -28,6 +30,14 @@
     .section-body-small {
       margin-top: 10px;
       font-size: 9px;
+
+      a {
+        color: teal;
+
+        &.grey {
+          color: lightgrey;
+        }
+      }
     }
   }
 }
@@ -72,6 +82,14 @@
       margin-top: 10px;
       font-size: 8px;
 
+      a {
+        color: teal;
+
+        &.grey {
+          color: lightgrey;
+        }
+      }
+
       @media screen and (orientation: portrait) {
         font-size: 10px;
       }
@@ -87,6 +105,38 @@
           font-size: 12px;
         }
       }
+    }
+  }
+}
+
+.nav-guide {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  .nav-guide-block {
+    &.left-arrow {
+      margin-right: 10px;
+      color: teal;
+    }
+
+    &.right-arrow {
+      margin-left: 10px;
+      color: teal;
+    }
+
+    &.blink {
+      animation: blinker 1s linear 5;
+    }
+
+    @keyframes blinker {
+      50% { opacity: 0.0; }
+    }
+
+    &.grey {
+      color: lightgrey;
     }
   }
 }

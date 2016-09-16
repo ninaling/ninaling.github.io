@@ -28,3 +28,12 @@ section {
 * {
   font-family: 'Open Sans', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,59 @@
+#feet {
+  .main-section {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    #shoes-img {
+      height: 50vh;
+
+      @media screen and (orientation: portrait) {
+        height: 35vh;
+      }
+
+      @media screen and (min-width: $medium-break) {
+        height: 55vh;
+
+        @media screen and (orientation: portrait) {
+          height: 45vh;
+        }
+
+        @media screen and (min-width: $medium-break) {
+          height: 60vh;
+        }
+      }
+    }
+
+    .section-text {
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: 5px;
+
+      @media screen and (orientation: portrait) {
+        margin-top: 55px;
+      }
+
+      @media screen and (min-width: $tiny-break) {
+        @media screen and (orientation: portrait) {
+          margin-top: 100px;
+        }
+
+        @media screen and (min-width: $medium-break) {
+          margin-top: 30px;
+
+          @media screen and (orientation: portrait) {
+            margin-top: 110px;
+          }
+
+          @media screen and (min-width: $large-break) {
+            padding-left: 250px;
+            padding-right: 250px;
+            // margin-top: 120px;
+          }
+        }
+      }
+    }
+  }
+}

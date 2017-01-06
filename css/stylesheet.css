@@ -147,7 +147,8 @@ a {
       justify-content: space-between;
       align-items: flex-end; }
       #contact .main-section .central-container .link-container .icon-block {
-        text-align: center; }
+        text-align: center;
+        display: inline-block; }
         #contact .main-section .central-container .link-container .icon-block .icon {
           width: 10vw; }
         #contact .main-section .central-container .link-container .icon-block .icon-text p {
